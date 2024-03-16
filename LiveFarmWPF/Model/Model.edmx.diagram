@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1ad7255c7e744f4296f9d381bf2beabf" Name="Diagram1">
+        <EntityTypeShape EntityType="LiveFarmModel.Assortment" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LiveFarmModel.Basket" Width="1.5" PointX="5.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LiveFarmModel.Makers" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LiveFarmModel.MakingStatuses" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LiveFarmModel.Orders" Width="1.5" PointX="7.5" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="LiveFarmModel.PickupPoints" Width="1.5" PointX="5.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LiveFarmModel.ProductsInOrder" Width="1.5" PointX="9.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LiveFarmModel.Roles" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LiveFarmModel.Units" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LiveFarmModel.Users" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <AssociationConnector Association="LiveFarmModel.FK_Assortment_Makers" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveFarmModel.FK_Assortment_Units" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveFarmModel.FK_Basket_Assortment" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveFarmModel.FK_ProductsInOrder_Assortment" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveFarmModel.FK_Basket_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveFarmModel.FK_Orders_MakingStatuses" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveFarmModel.FK_Orders_PickupPoints" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveFarmModel.FK_Orders_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveFarmModel.FK_ProductsInOrder_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveFarmModel.FK_PickupPoints_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveFarmModel.FK_ProductsInOrder_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveFarmModel.FK_Users_Roles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
